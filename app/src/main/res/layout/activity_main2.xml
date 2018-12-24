@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity" >
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_alignParentRight="true"
+        android:text="歸零" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start"
+        android:layout_alignBottom="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:text="停止" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:text="開始" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hour"
+        android:layout_alignLeft="@+id/stop"
+        android:layout_alignBottom="@+id/hour"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:text="00"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stop"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="33dp"
+        android:layout_toLeftOf="@+id/min"
+        android:text="00"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/min"
+        android:layout_alignBottom="@+id/min"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toEndOf="@+id/min"
+        android:layout_toRightOf="@+id/stop"
+        android:text="00"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="154dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="-88dp"
+        android:layout_marginBottom="212dp"
+        android:layout_toStartOf="@+id/hour"
+        android:text="消耗的卡路里:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="125dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/zero"
+        android:layout_alignEnd="@+id/sec"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="-72dp"
+        android:layout_marginBottom="9dp"
+        android:text="0.00"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="10dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/stop"
+        android:text=":"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="10dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="-64dp"
+        android:layout_toStartOf="@+id/stop"
+        android:text=":"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="133dp"
+        android:text="返回" />
+
+</RelativeLayout>
